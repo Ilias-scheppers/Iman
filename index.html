@@ -1,47 +1,58 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GOOD BOY</title>
+    <title>GitHub Website Setup | GOOD BOY</title>
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f8ff;
-            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            margin-bottom: 40px;
         }
         
         .good-boy {
-            font-size: 15vw;
-            font-weight: bold;
+            font-size: 6rem;
+            font-weight: 900;
             color: #2c3e50;
             text-shadow: 4px 4px 8px rgba(0,0,0,0.2);
-            text-align: center;
-            line-height: 1.2;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+            background: linear-gradient(45deg, #3498db, #2ecc71, #e74c3c, #f39c12);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: gradient 5s ease infinite;
+            background-size: 400% 400%;
         }
         
-        /* Kleurverandering voor een speels effect */
-        .good-boy span:nth-child(1) { color: #3498db; }
-        .good-boy span:nth-child(2) { color: #e74c3c; }
-        .good-boy span:nth-child(3) { color: #2ecc71; }
-        .good-boy span:nth-child(4) { color: #f39c12; }
-        .good-boy span:nth-child(5) { color: #9b59b6; }
-        .good-boy span:nth-child(6) { color: #1abc9c; }
-        .good-boy span:nth-child(7) { color: #d35400; }
-    </style>
-</head>
-<body>
-    <h1>Tibo Kennes heeft geen Kennis</h1>
-    <h1>Byubomir en Jorre</h1>
-
-
-    <div class="good-boy">
-        <span>M</span><span>A</span><span>N</span><span>I</span>
-    </div>
-</body>
-</html>
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            color: #7f8c8d;
+            margin-bottom: 30
